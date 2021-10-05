@@ -2,8 +2,8 @@ package com.todoapp.rest.webservices.todoappbackend;
 
 import org.springframework.web.bind.annotation.*;
 
-// Controller
-@RestController
+@CrossOrigin(origins="http://localhost:4200") // allow requests from specific URL
+@RestController // this is a REST controller
 public class HelloWorldController {
     //GET method= helloWorld
     //URI path= "/hello-world"
